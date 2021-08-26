@@ -1,7 +1,32 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// BASE AND COMPONENTS
+@import './utils/variables';
+@import './base/body';
+@import './base/common';
+@import './utils/breackpoints';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+@import './components/container';
+@import './components/logo';
+@import './components/button';
+@import './components/section-title';
+@import './components/section-suptitle-before';
+@import './components/paragraph';
+
+//HEADER + MOBILE-MENU
+
+//HERO
+
+//ABOUT
+
+//PRICES
+
+//FEATURES
+
+//MASTERS
+
+//PORTFOLIO
+
+//FOOTER
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';

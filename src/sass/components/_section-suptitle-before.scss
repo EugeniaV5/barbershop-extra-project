@@ -1,0 +1,33 @@
+.suptitle {
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  @include font(11px, 600, 15px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle--light-theme {
+  color: #303030;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 60px;
+    transform: rotate(90deg);
+    margin-bottom: 20px;
+    color: #303030;
+  }
+}
+
+.suptitle--dark-theme {
+  color: rgba(157, 164, 189, 0.6);
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 60px;
+    transform: rotate(90deg);
+    margin-bottom: 20px;
+    color: rgba(157, 164, 189, 0.6);
+  }
+}
