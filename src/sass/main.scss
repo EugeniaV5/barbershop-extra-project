@@ -10,22 +10,21 @@
 @import './components/button';
 @import './components/section-title';
 @import './components/section-suptitle-before';
-@import './components/paragraph';
 
 //HEADER + MOBILE-MENU
-
+@import './layout/header';
+@import './layout/mobile-menu';
 //HERO
-
+@import './layout/hero';
 //ABOUT
-
+@import './layout/about';
 //PRICES
-
+@import './layout/prices';
 //FEATURES
-
+@import './layout/features';
 //MASTERS
-
+@import './layout/masters';
 //PORTFOLIO
-
+@import './layout/portfolio';
 //FOOTER
-
-// Стили для файла с примером HTML-фрагмента
+@import './layout/footer';
