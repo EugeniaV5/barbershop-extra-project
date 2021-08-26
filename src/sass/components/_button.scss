@@ -1,0 +1,29 @@
+.button {
+  min-width: 160px;
+  padding: 12px 20px;
+  font-family: Open Sans;
+  @include font(12px, 600, 16px);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.button--light-theme {
+  color: #303030;
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #ff6c00;
+  }
+}
+
+.button--dark-theme {
+  color: #ffffff;
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: #ff6c00;
+  }
+}
