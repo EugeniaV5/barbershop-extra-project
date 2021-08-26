@@ -1,24 +1,24 @@
 .title__best-barbershop {
   margin-bottom: 20px;
-  font-family: Raleway;
+  font-family: var(--primary-font);
   @include font(28px, 600, 33px);
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--title-color-light-theme);
   @include min-width('large') {
     @include font(42px, 600, 49px);
   }
 }
 
 .title {
-  font-family: Raleway;
+  font-family: var(--primary-font);
   @include font(42px, 600, 49px);
   letter-spacing: 0.05em;
 }
 
 .title--dark-theme {
-  color: #ffffff;
+  color: var(--title-color-dark-theme);
 }
 
 .title--light-theme {
-  color: #303030;
+  color: var(--title-color-light-theme);
 }
