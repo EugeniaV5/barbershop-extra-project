@@ -1,3 +1,93 @@
 .prices {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1280px;
   background-color: var(--background-dark-theme);
+  background-image: url('../images/prices/prices-mobile.png');
+  @include retina('../images/prices/prices-mobile@2x.png', 'small');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include min-width('medium') {
+    padding: 100px 0;
+    background-image: url('../images/prices/prices-tablet.png');
+    @include retina('../images/prices/prices-tablet@2x.png', 'medium');
+  }
+  @include min-width('large') {
+    padding: 130px 0;
+    background-image: url('../images/prices/prices-desktop.png');
+    @include retina('../images/prices/prices-desktop@2x.png', 'large');
+  }
+}
+
+.prices__title {
+  margin-bottom: 33px;
+  @include min-width('medium') {
+    margin-bottom: 44px;
+  }
+}
+
+.prices__wrapper {
+  margin-bottom: 50px;
+  @include max-width('medium') {
+    padding: 30px;
+  }
+  @include max-width('large') {
+    padding: 30px 40px;
+    background-image: var(--background-prices);
+  }
+  @include min-width('large') {
+    @include flex-center($fw: no-wrap);
+  }
+}
+
+.prices__item {
+  display: flex;
+  align-items: baseline;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @include font(14px, 400, 30px);
+  letter-spacing: 0.02em;
+  color: var(--text-color-dark-theme);
+  &::before {
+    content: '';
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
+
+.item__forth {
+  @include max-width('large') {
+    margin-bottom: 20px;
+  }
+}
+.prices__name {
+  order: -1;
+}
+
+.prices__button {
+  margin: 0 auto;
+}
+
+.prices__left-list,
+.prices__right-list {
+  @include min-width('large') {
+    flex-basis: calc(100% / 2);
+    padding: 30px 40px;
+  }
+}
+.prices__left-list {
+  @include min-width('large') {
+    background-image: var(--background-prices);
+  }
+}
+.prices__right-list {
+  @include min-width('large') {
+    background-image: var(--background-prices-dark);
+  }
 }
