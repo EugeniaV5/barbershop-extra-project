@@ -73,9 +73,11 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-basis: 210px;
+    padding: 20px 40px;
   }
   @include min-width('large') {
     flex-basis: 170px;
+    padding: 20px;
   }
 }
 
@@ -89,15 +91,21 @@
   &--more::before,
   &--less::before {
     content: '+';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
     @include font(16px, 600, 22px);
     color: var(--accent-color);
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: -12px;
+    @include min-width('small') {
+      right: 12px;
+    }
   }
   &--less::before {
-    right: 12%;
+    right: 0;
+    @include min-width('small') {
+      right: 24px;
+    }
   }
 }
 
