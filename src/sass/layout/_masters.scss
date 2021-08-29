@@ -1,0 +1,56 @@
+// -------Masters-section------------
+.masters-section {
+  background-color: var(--background-masters);
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @include min-width('medium') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @include min-width('large') {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+// -------Masters-section end------------
+
+// ---------Masters-card-----------
+
+.masters-card__name,
+.masters-card__profession {
+  display: flex;
+  justify-content: center;
+}
+// ---------Masters-card end-----------
+
+// ----------Social-link-----------
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50px;
+  background-color: var(--title-color-dark-theme);
+  fill: var(--title-color-light-theme);
+
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+// --------Social-link end-----------
