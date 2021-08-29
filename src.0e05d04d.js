@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/prices/prices-mobile.png":[["prices-mobile.1831fc19.png","DXfP"],"DXfP"],"./../images/prices/prices-mobile@2x.png":[["prices-mobile@2x.1dadcdea.png","zn49"],"zn49"],"./../images/prices/prices-tablet.png":[["prices-tablet.6f940ebc.png","ikDc"],"ikDc"],"./../images/prices/prices-tablet@2x.png":[["prices-tablet@2x.1523f80b.png","zHQX"],"zHQX"],"./../images/prices/prices-desktop.png":[["prices-desktop.6576e304.png","idS8"],"idS8"],"./../images/prices/prices-desktop@2x.png":[["prices-desktop@2x.7f7c6107.png","dSOg"],"dSOg"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/barbershop-extra-project/src.cdc2e7cc.js.map
+//# sourceMappingURL=/barbershop-extra-project/src.0e05d04d.js.map
