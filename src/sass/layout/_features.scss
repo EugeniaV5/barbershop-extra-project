@@ -1,0 +1,115 @@
+.features {
+  padding: 84px 0;
+  @include min-width('medium') {
+    padding: 100px 0;
+  }
+  @include min-width('large') {
+    padding-top: 121px;
+    padding-bottom: 130px;
+  }
+}
+
+.features__wrapper {
+  @include min-width('large') {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.features__text-wrapper {
+  @include max-width('large') {
+    padding-bottom: 44px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-right: 210px;
+  }
+  @include min-width('large') {
+    padding-top: 7px;
+    flex-basis: 470px;
+  }
+}
+
+.features__title {
+  margin-bottom: 20px;
+}
+
+.features__text {
+  @include font(18px, 400, 30px);
+  letter-spacing: 0.02em;
+  color: var(--text-color-light-theme);
+}
+
+.features__card-wrapper {
+  @include min-width('large') {
+    flex-basis: 370px;
+    order: -1;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 240px;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 32px;
+  &:nth-child(odd) {
+    margin-bottom: 30px;
+  }
+  background-color: var(--background-masters);
+  @media screen and (min-width: 320px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @include min-width('small') {
+    flex-basis: 193px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: 210px;
+    padding: 20px 40px;
+  }
+  @include min-width('large') {
+    flex-basis: 170px;
+    padding: 20px;
+  }
+}
+
+.features__num {
+  position: relative;
+  margin-bottom: 6px;
+  @include font(42px, 700, 57px);
+  letter-spacing: 0.05em;
+  color: var(--title-color-light-theme);
+
+  &--more::before,
+  &--less::before {
+    content: '+';
+    @include font(16px, 600, 22px);
+    color: var(--accent-color);
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: -12px;
+    @include min-width('small') {
+      right: 12px;
+    }
+  }
+  &--less::before {
+    right: 0;
+    @include min-width('small') {
+      right: 24px;
+    }
+  }
+}
+
+.features__desc {
+  @include font(11px, 600, 15px);
+  color: var(--title-color-light-theme);
+}
