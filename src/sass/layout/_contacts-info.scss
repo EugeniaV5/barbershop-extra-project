@@ -1,4 +1,4 @@
-.contacts-info__background {
+.section__background {
   background-color: #191c26;
 }
 
@@ -8,14 +8,12 @@
     margin: 0 auto;
     padding: 0 15px;
     width: 1164px;
-    background-color: #191c26;
   }
 }
 
 .booking-servise,
 .contacts-info {
   padding: 84px 0;
-  background-color: #191c26;
   @include min-width('medium') {
     padding: 100px 0;
   }
@@ -121,7 +119,8 @@
   .form__input:focus + & {
     color: #ffffff;
   }
-  .form__input:focus + & {
+  .form__input:focus + &,
+  .form__input:not(:placeholder-shown) + & {
     transform: translateY(-25px);
   }
 }
@@ -169,20 +168,20 @@
 }
 
 .contacts-info {
-  @include min-width('medium') {
-    padding: 100px 0;
-  }
-  @include min-width('large') {
-    padding-top: 130px;
-    padding-bottom: 128px;
-  }
-  background-image: url('../images/footer/footer-mobile.png');
-  @include retina('../images/footer/footer-mobile@2x.png', 'small');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
+  @include max-width('medium') {
+    max-width: 480px;
+    background-image: url('../images/footer/footer-mobile.png');
+    @include retina('../images/footer/footer-mobile@2x.png', 'small');
+  }
   @include min-width('medium') {
     padding: 100px 0;
+  }
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
+    max-width: 768px;
     background-image: url('../images/footer/footer-tablet.png');
     @include retina('../images/footer/footer-tablet@2x.png', 'medium');
   }
@@ -224,6 +223,11 @@
 .address__link {
   display: flex;
   align-items: center;
+  transition: transform 250ms var(--timing-function);
+  &:hover {
+    animation-name: pulse;
+    animation-duration: 250ms;
+  }
 }
 
 .address__icon {

@@ -1,20 +1,26 @@
 .prices {
   margin: 0 auto;
   padding: 50px 0;
-  max-width: 1280px;
   background-color: var(--background-dark-theme);
   background-image: url('../images/prices/prices-mobile.png');
   @include retina('../images/prices/prices-mobile@2x.png', 'small');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @include max-width('medium') {
+    max-width: 480px;
+  }
   @include min-width('medium') {
     padding: 100px 0;
     background-image: url('../images/prices/prices-tablet.png');
     @include retina('../images/prices/prices-tablet@2x.png', 'medium');
   }
+  @media screen and(min-width: 768px) and(max-width: 1279px) {
+    max-width: 768px;
+  }
   @include min-width('large') {
     padding: 130px 0;
+    max-width: 1280px;
     background-image: url('../images/prices/prices-desktop.png');
     @include retina('../images/prices/prices-desktop@2x.png', 'large');
   }
@@ -72,6 +78,7 @@
 }
 
 .prices__button {
+  width: 164px;
   margin: 0 auto;
 }
 
