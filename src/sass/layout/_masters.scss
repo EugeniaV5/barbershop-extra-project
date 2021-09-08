@@ -1,0 +1,93 @@
+// -------Masters-section------------
+.masters-section {
+  background-color: var(--background-masters);
+}
+
+.masters-container {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+}
+
+.masters-suptitle {
+  margin-bottom: 20px;
+}
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.masters-list__item {
+  &:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 30px);
+
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+// -------Masters-section end------------
+
+// ---------Masters-card-----------
+
+.masters-card__name,
+.masters-card__profession {
+  display: flex;
+  justify-content: center;
+}
+.masters-card {
+  padding-top: 30px;
+}
+
+.masters-card__name {
+  margin-bottom: 8px;
+}
+.masters-card__profession {
+  margin-bottom: 30px;
+}
+// ---------Masters-card end-----------
+
+// ----------Social-link-----------
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50px;
+  background-color: var(--title-color-dark-theme);
+  fill: var(--title-color-light-theme);
+
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+// --------Social-link end-----------
