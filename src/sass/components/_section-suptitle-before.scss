@@ -7,8 +7,13 @@
 }
 
 .suptitle--light-theme {
+  position: relative;
+  padding-left: 80px;
   color: var(--title-color-light-theme);
   &::before {
+    position: absolute;
+    left: 0px;
+    top: 6px;
     content: '';
     display: inline-block;
     width: 60px;
@@ -20,8 +25,13 @@
 }
 
 .suptitle--dark-theme {
+  position: relative;
+  padding-left: 80px;
   color: var(--subtitle-color-dark-theme);
   &::before {
+    position: absolute;
+    left: 0px;
+    top: 6px;
     content: '';
     display: inline-block;
     width: 60px;
